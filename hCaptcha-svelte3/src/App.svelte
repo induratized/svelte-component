@@ -51,9 +51,9 @@
         return script
     }
 
-    onMount(function() {
-        const { languageOverride } = props;
-        const { isApiReady, elementId } = $state
+onMount(function() {
+const { languageOverride } = props;
+const { isApiReady, elementId } = $state
 
         if (!isApiReady) {
             //Check if hCaptcha has already been loaded, if not create script tag and wait to render captcha elementID - hCaptcha
